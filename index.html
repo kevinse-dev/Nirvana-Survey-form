@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Survey</title>
+</head>
+
+<body>
+    <h1 id='title'>[NFC:Nirvana Fan Club] survey</h1>
+    <p id='description'>Thank you for taking the time to us </p>
+
+    <form action="#" for='name' id="survey-form">
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+        </label>
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+        </label>
+        <label for="number" id="number-label">
+            Age
+            <input type="number" id="number" placeholder="How old are you ?" min="19" max="60">
+        </label>
+
+        <label for="email" id="dropdown-label">
+            what genre of song do you like?
+            <select name="dropdown" id="dropdown">
+                <option value="masukan">Dangdut</option>
+                <option>Classic</option>
+                <option>Jazz</option>
+                <option>Blues</option>
+                <option>Techno</option>
+                <option>Reggae</option>
+                <option>R & B</option>
+                <option>Rap</option>
+                <option>Death Metal</option>
+                <option>POP</option>
+            </select>
+        </label>
+
+        <label for="member" id="member-lokal">
+            who is your favorite member ?
+        </label>
+
+        <input type="radio" name="member" value="1" checked> Kurt Cobain <br>
+        <input type="radio" name="member" value="2" checked> Dave Grohl <br>
+        <input type="radio" name="member" value="3" checked> Krist Novoselic <br>
+
+
+        <label for="email" id="dropdown-label">
+            how do you feel after listening to their song?
+            <select name="dropdown" id="dropdown">
+                <option value="masukan">Happy</option>
+                <option value="">Sad</option>
+                <option value="">Fun</option>
+                <option value="">Angry</option>
+
+            </select>
+        </label>
+
+
+        <label id="member-lokal">
+            who is your favorite album ?
+        </label>
+
+        <input type="checkbox" value="album-1" checked> Bleach <br>
+        <input type="checkbox" value="album-2" checked> Nevermind <br>
+        <input type="checkbox" value="album-3" checked> In Utero <br>
+        <input type="checkbox" value="album-4" checked> Hormoaning <br>
+        <input type="checkbox" value="album-5" checked> Incesticide <br>
+        <input type="checkbox" value="album-6" checked> Other <br>
+
+        <br>
+        <br>
+        <label for="comments" id="comments-label">
+            Any comments or suggestions ?
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your Comments here">
+            </textarea>
+        </label>
+        <button id="submit" type="submit">Submit</button>
+
+    </form>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
